@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+	display: inline-block;
+}
+.theme-pink{
+	color: #df42b1;
+}
+.theme-bg-pink{
+	background-color: #df42b1;
+}
+.theme-bg-gray{
+	background-color: #ffffff1a;
+}
+.theme-gray{
+	color: #9293bc;
+}
+.theme-btn{
+	color: #ffffff;
+	background: linear-gradient(300deg, #505add, #df42b1);
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s all;
+	z-index: 99;
+}
+.theme-btn::before{
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	transition: 0.5s all;
+	z-index: -1;
+}
+.theme-btn:hover{
+	color: #000000 !important;
+}
+.theme-btn:hover::before{
+	right: 0;
+}
+.theme-form{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	color: #6c757d;
+}
+.back-to-top{
+	width: 50px;
+	height: 50px;
+	transition: 0.5s all;
+}
+.back-to-top:hover{
+	background-color: #000000;
+}
+input::-webkit-inner-spin-button {
+	appearance: none;
+}
+input, textarea{
+    outline:none;
+}
+
+/* HEADER */
+
+header{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+header nav ul li:first-child a{
+	color: #df42b1;
+}
+header nav ul li a:hover, header nav ul li a:focus{
+	color: #df42b1 !important;
+}
+
+/* SLIDER */
+
+.carousel .container{
+	height: 900px;
+}
+.carousel .carousel-item{
+	background: url(../img/slider-bg-1.jpg) rgba(0, 0, 0, 0.5);
+	background-blend-mode: color-burn;
+	background-size: cover !important;
+	background-position: center !important;
+}
+.carousel .carousel-item h1 > span::before{
+	content: '';
+	height: 25px;
+	width: 110%;
+	background: linear-gradient(300deg, #505add, #df42b1);
+	position: absolute;
+	top: 60%;
+	right: 0;
+	z-index: -1;
+}
+.carousel-inner .carousel-item:last-child{
+	background: url(../img/slider-bg-2.jpg) rgba(0, 0, 0, 0.5);
+}
+.carousel-control-prev, .carousel-control-next{
+	height: 50px;
+	width: 50px !important;
+	overflow: hidden;
+}
+.carousel-control-prev::before, .carousel-control-next::before{
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: #80808083;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.3s all;
+}
+.carousel-control-prev:hover::before, .carousel-control-next:hover::before{
+	opacity: 1;
+}
+
+/* CONFERENCE */
+
+.conference{
+	padding-top: 100px;
+	background-color: #151853;
+}
+.conference-items{
+	padding-right: 115px;
+}
+.conference-items h6{
+	border-bottom: 2px solid #4b4d7b;
+}
+.conference-items p{
+	font-size: 18px;
+}
+.conference-date{
+	padding: 80px 0 100px 0;
+}
+
+/* SPEAKERS */
+
+.speakers{
+	background-image: url(../img/speaker-bg-img.jpg), linear-gradient(320deg, #df42b1 0%, #505add 100%);
+	background-blend-mode: lighten;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+}
+.speakers .speakers-items{
+	width: 90%;
+	overflow: hidden;
+}
+.speakers .speakers-items::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #000000cc 0%, #00000033 30%, #00000000 100%);
+	border-radius: 16px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.speakers .speakers-info{
+	border-radius: 0 16px 0 16px;
+	transition: 0.5s all !important;
+	top: -100%;
+}
+.speakers .speakers-items:hover .speakers-info{
+	top: 0;
+}
+.speakers-btn a{
+	transition: 0.5s all;
+}
+.speakers-btn a:hover{
+	background-color: #df42b1;
+	border-color: #df42b1;
+}
+
+/* TIME-TABLE */
+
+.time-table{
+	padding: 100px 0;
+	background-color: #151853;
+}
+.time-table a:first-child{
+	background-color: #5d5e8d;
+}
+.time-table a{
+	background-color: #1f2371;
+}
+.time-table .time-table-items{
+	transition: 0.3s all;
+}
+.time-table .time-table-items:hover{
+	border-color: #df42b1 !important;
+}
+.time-table .time-table-btn a{
+	background: transparent;
+	border: 3px solid #df42b1;
+}
+
+/* TICKET */
+
+.ticket{
+	padding: 100px 0;
+	background-image: url(../img/ticket-bg-img.jpg), linear-gradient(120deg, #df42b1 0%, #505add 100%);
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+.ticket .ticket-items{
+	transition: 0.4s all;
+}
+.ticket .ticket-items:hover{
+	transform: scale(1.05);
+}
+
+/* SPONSOR */
+
+.sponsor{
+	padding: 100px 0;
+	background-color: #151853;
+}
+.sponsor .sponsor-items{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	padding: 85px 0 !important;
+	height: 300px;
+}
+.sponsor .sponsor-items img{
+	opacity: 50%;
+	transition: 0.5s all;
+}
+.sponsor .sponsor-items:hover img{
+	opacity: 100%;
+}
+
+/* BLOG */
+
+.blog{
+	background-image: url(../img/blog-bg-img.jpg), linear-gradient(300deg, #df42b1 0%, #505add 100%);
+	background-blend-mode: soft-light;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+}
+.blog .blog-items img{
+	transition: 0.5s all;
+}
+.blog .blog-items:hover img{
+	transform: scale(1.1);
+}
+.blog-items .blog-items-content a{
+	transition: 0.4s all;
+}
+.blog-items .blog-items-content a:hover{
+	color: #df42b1 !important;
+}
+.blog .blog-items-btn a{
+	width: 50px;
+	height: 50px;
+	line-height: 47px;
+	background-image: linear-gradient(120deg, #df42b1 0%, #505add 100%);
+}
+
+/* CONTACT-US */
+
+.contact-us{
+	padding: 100px 0;
+	background-color: #151853;
+}
+
+/* FOOTER */
+
+footer{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	background-color: #111343;
+}
+footer .col-12:first-child .footer-items .d-flex a, footer .col-12:nth-child(3) ul li a{
+	transition: 0.4s all;
+}
+footer .col-12:first-child .footer-items .d-flex a:hover{
+	background-color: #ffffff1a;
+}
+footer .col-12:nth-child(3) ul li a:hover{
+	color: #ffffff;
+}
+footer .gallery-img-items::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(120deg, #505add 0%, #df42b1 100%);
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+footer .gallery-img-items:hover::before{
+	opacity: 0.7;
+}
+.copyright-items a{
+	transition: 0.4s all;
+}
+.copyright .col-12:first-child .copyright-items a:hover{
+	color: #df42b1 !important;
+}
+.copyright .col-12:nth-child(2) .copyright-items a:hover{
+	color: #ffffff;
+}

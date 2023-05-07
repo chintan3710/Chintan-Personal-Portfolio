@@ -1,0 +1,112 @@
+@media (min-width: 576px){
+    .container{
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 600px;
+    }
+}
+@media (min-width: 992px){
+    main, footer{
+        margin-left: 260px;
+    }
+    .container{
+        max-width: 840px;
+    }
+    .w-lg-30{
+        width: 30%;
+    }
+    .w-lg-50{
+        width: 50%;
+    }
+    .w-lg-70{
+        width: 70%;
+    }
+    .mr-lg-3{
+        margin-right: 30px !important;
+    }
+    .ml-lg-3{
+        margin-left: 30px !important;
+    }
+    .flex-lg-column{
+        flex-direction: column;
+    }
+    .about-me-heading h2, .resume-heading h2, .portfolio-heading h2, .contact-heading h2{
+        font-size: 130px;
+    }
+    .about-me-heading p, .resume-heading p, .portfolio-heading p, .contact-heading p{
+        font-size: 36px;
+    }
+    .about-me-heading p > span, .resume-heading p > span, .portfolio-heading p > span, .contact-heading p > span{
+        width: 80px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        padding: 40px 25px 12px 25px;
+    }
+    header .profile-header h2{
+        margin-top: 5px;
+    }
+    header .profile-header img{
+        display: block;
+    }
+    header nav{
+        display: block;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+    header .header-icons{
+        margin: 0;
+    }
+    header .nav-toggle{
+        display: none;
+    }
+    .banner{
+        background-position: 0 -134px;
+    }
+    .cd-intro span:first-of-type, .cd-intro span b{
+        font-size: 60px;
+    }
+    .about-me .about-me-items:first-child{
+        padding-right: 50px;
+        text-align: left;
+    }
+    .resume .w-lg-50:nth-child(2) .resume-items-box{
+        margin: 0;
+    }
+    .resume .w-lg-50:first-of-type .resume-items-box, .resume .w-lg-50:last-of-type .resume-items-box{
+        margin: 0 15px 15px 0;
+    }
+    .contact .row{
+        flex-direction: row;
+    }
+    .contact .contact-items.text-center{
+        text-align: left;
+    }
+    .contact .contact-items ul li.d-flex, .contact .contact-items ul.d-flex{
+        justify-content: flex-start;
+    }
+    footer .footer-items ul{
+        justify-content: flex-end;
+    }
+    footer .footer-items.text-center{
+        text-align: left;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1020px;
+    }
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1200px;
+    }
+}

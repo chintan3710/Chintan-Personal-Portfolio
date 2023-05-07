@@ -1,0 +1,14 @@
+@media (min-width: 1400px){
+    .banner .col-12:last-child .banner-items{
+        padding-left: 100px !important;
+    }
+}
+
+@media (min-width: 1200px){
+    .banner .col-12:last-child .banner-items{
+        padding-left: 80px !important;
+    }
+    .services-sales .services-sales-items p{
+        max-width: 400px;
+    }
+}

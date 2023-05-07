@@ -1,0 +1,101 @@
+@media (max-width: 1399px){
+    .container{
+        max-width: 1440px;
+    }
+}
+@media (max-width: 1199px){
+    .container{
+        max-width: 960px;
+    }
+    .projects-content h2{
+        line-height: 3;
+    }
+    .collaborate .collaborate-items h2{
+        font-size: 48px;
+    }
+}
+@media (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+    .w-md-1{
+        width: 100%;
+    }
+    .w-md-2{
+        width: 50%;
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #000000;
+        display: none;
+    }
+    header nav ul{
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    header nav ul li, header nav ul li:nth-child(5){
+        padding: 10px 0;
+    }
+    header .toggle{
+        display: block;
+    }
+    .services .w-3:last-child .services-items{
+        margin-top: 30px;
+    }
+    .infrastructure .infrastructure-items h2, .collaborate .collaborate-items h2{
+        font-size: 35px;
+    }
+    .infrastructure .infrastructure-items p, .collaborate .collaborate-items p{
+        font-size: 17px;
+    }
+    .testimonial-inner .w-3:last-child .testimonial-items{
+        margin-top: 15px;
+    }
+    .blog .blog-inner .w-2:first-child .d-flex{
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: 540px;
+    }
+    .projects-content h2{
+        line-height: 2.5;
+    }
+}
+@media (max-width: 575px){
+    .container{
+        max-width: 100%;
+    }
+    .w-xs-1{
+        width: 100%;
+    }
+    .text-xs-center{
+        text-align: center;
+    }
+    .justify-xs-center{
+        justify-content: center;
+    }
+    .services .w-3:first-child .services-items{
+        margin-bottom: 30px;
+    }
+    .infrastructure .infrastructure-items h2, .collaborate .collaborate-items h2{
+        margin: 20px 0;
+    }
+    .infrastructure .w-40 .infrastructure-items, .collaborate .w-40 .collaborate-items{
+        padding: 0 20px 20px 20px;
+    }
+    .testimonial-inner .w-3:nth-child(2) .testimonial-items{
+        margin-top: 15px;
+    }
+    .projects-content h2{
+        line-height: 4;
+    }
+    footer .w-3:nth-of-type(2) .footer-items, footer .w-3:nth-of-type(3) .footer-items{
+        padding: 0;
+    }
+}
