@@ -77,7 +77,7 @@ input:focus, textarea:focus{
     color: var(--color-green);
 }
 .text-white{
-    color: #ffffff !important;
+    color: #ffffff ;
 }
 .bg-white{
     background-color: #ffffff;
